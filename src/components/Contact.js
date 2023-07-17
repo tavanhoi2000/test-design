@@ -22,19 +22,13 @@ function Contact() {
       },
       body: encode({
         "form-name": "contact",
-        data,
+        data
       }),
     })
       .then(() => {
-        alert(data.name)
-        data.name = ''
-        data.email = ''
-        data.message = ''
-
+        alert(data.name);
       })
       .catch((error) => alert(error));
-
-
   }
   return (
     <section id="contact" className="relative">
